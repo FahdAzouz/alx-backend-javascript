@@ -1,18 +1,16 @@
 const groceriesList = () => {
-  const items = new Map();
-  const objects = {
+  const res = new Map();
+  const objetos = {
     Apples: 10,
     Tomatoes: 10,
     Pasta: 1,
     Rice: 1,
-    Banana: 5
+    Banana: 5,
   };
-
-  for (const key of Object.keys(objects)) {
-    items.set(key, objects[key]);
+  for (const key of Object.keys(objetos)) {
+    res.set(key, objetos[key]);
   }
-
-  return items;
-}
+  return res;
+};
 
 export default groceriesList;
